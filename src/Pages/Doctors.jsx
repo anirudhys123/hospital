@@ -165,7 +165,7 @@ const Doctors = () => {
   </Box>
   <Box mt="75px" flex="1" mr="10px" width={100}>
     <FormLabel>Filter by Category:</FormLabel>
-    <Select className="filter-by-category" value={filterBy} onChange={(e) => getDoctorValue(e.target.value) || setFilterBy(e.target.value)}>
+    <Select className="filter-by-category" value={filterBy} onChange={(e) => getDoctorValue(e.target.value) }>
       <option value="">Select Category</option>
       <option value="doctors">All Categories</option>
       <option value="cardiology">Cardiologist</option>

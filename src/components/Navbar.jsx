@@ -20,7 +20,7 @@ import {
   Avatar, AvatarBadge, AvatarGroup,
   VStack,
 } from '@chakra-ui/react';
-import logo1 from '../Assets/logo.png';
+import logo1 from '../Assets/logo.jpeg';
 import { Search2Icon  } from '@chakra-ui/icons';
 import 'animate.css';
 import axios from 'axios';
@@ -142,22 +142,23 @@ export default function WithSubnavigation() {
           flex={{ base: 1 }}
           justify={{ base: 'center', md: 'start' }}
         >
-        <Image
-            src={logo1}
-            w={{
-              base: '80px',
-              sm: '100px',
-              md: '100px',
-              lg: '100px',
-              xl: '100px',
-              '2xl': '100px',
-            }}
-            objectFit={'cover'}
-            borderRadius={'5px'}
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}
-          />
+       <Image
+  src={logo1}
+  w={{
+    base: '40px', // Adjusted from '80px'
+    sm: '50px',  // Adjusted from '100px'
+    md: '50px',  // Adjusted from '100px'
+    lg: '25px',  // Adjusted from '50px'
+    xl: '50px',  // Adjusted from '100px'
+    '2xl': '50px', // Adjusted from '100px'
+  }}
+  objectFit={'cover'}
+  borderRadius={'5px'}
+  textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+  fontFamily={'heading'}
+  color={useColorModeValue('gray.800', 'white')}
+/>
+
 
           {/* </Text> */}
 
@@ -279,8 +280,8 @@ const DesktopNav = () => {
               <Link
                 p={2}
                 href={navItem.href ?? '#'}
-                fontSize={'sm'}
-                fontWeight={500}
+                fontSize={'xl'}
+                fontWeight={800}
                 color={linkColor}
                 _hover={{
                   textDecoration: 'none',

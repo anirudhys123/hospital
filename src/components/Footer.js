@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../Assets/logo.png';
+import logo from '../Assets/logo.jpeg';
 import appStore from '../Assets/app-store.png';
 import playStore from '../Assets/play-store.png';
 import visa from '../Assets/visa.png';
